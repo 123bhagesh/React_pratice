@@ -30,6 +30,18 @@ const Homepage = () => {
         if(name.length > 0 && level.length==2){
         localStorage.setItem('wordName',JSON.stringify(name))
         localStorage.setItem('wordLevel',JSON.stringify(level))
+        if(level==15){
+            let level11 = "High Level"
+            localStorage.setItem('wordLevel11',JSON.stringify(level11))
+        }
+        else if(level==30){
+            let level11 = "Medium Level"
+            localStorage.setItem('wordLevel11',JSON.stringify(level11))
+        }
+        else if(level==40){
+            let level11 = "Low Level"
+            localStorage.setItem('wordLevel11',JSON.stringify(level11))
+        }
             toast({
                 title: `Adding Sucess`,
                 status: "success",
@@ -75,9 +87,9 @@ const Homepage = () => {
               <Input type="text" onChange={(e)=> setName(e.target.value)}/>
             </FormControl>
             <Select placeholder='Select Level' onChange={(e)=>setLevel(e.target.value)}>
-                <option value='40'>High Level</option>
+                <option value='15'>High Level</option>
                 <option value='30'>Medium Level</option>
-                <option value='15'>Low Level</option>
+                <option value='40'>Low Level</option>
             </Select>
             <Stack spacing={10}>
 

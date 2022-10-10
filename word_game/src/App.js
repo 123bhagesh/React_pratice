@@ -5,9 +5,6 @@ import MainRoutes from './Components/MainRoutes';
 function App() {
   return (
     <div className="App">
-      <div>
-        <a href='/word'>Word Page</a>      
-      </div>
       <MainRoutes/>
     </div>
   );

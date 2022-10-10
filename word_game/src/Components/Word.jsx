@@ -116,8 +116,8 @@ const Word = () => {
       }
       // console.log(payload)
       axios.post('https://jsonserver-her-mock5.herokuapp.com/word_game',payload)
+      .then(()=> window.location.reload())
       navigate('/result')
-      // window.location.reload()
     }
 
 

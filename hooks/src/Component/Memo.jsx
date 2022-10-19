@@ -2,14 +2,17 @@ import React, {useMemo, useState} from 'react';
   
 function Memo() {
   const [number, setNumber] = useState(0)
-//   const squaredNum =  squareNum(number);
+  const squaredNum =  (
+    console.log("I am running"),
+    Math.pow(number,2)
+  )
 
   // -------Using useMemo-------->
-  const squaredNum = useMemo(()=> {
-    console.log("SQUARE")
-    // return squareNum(number);
-    return Math.pow(number, 2)
-  }, [number])
+//   const squaredNum = useMemo(()=> {
+//     console.log("SQUARE")
+//     // return squareNum(number);
+//     return Math.pow(number, 2)
+//   }, [number])
 
 
   const [counter, setCounter] = useState(0);

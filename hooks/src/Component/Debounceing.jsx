@@ -4,10 +4,10 @@ const Debounceing = () => {
     let count=0
     let args;
     const getData=(args)=>{
-        console.log("API call...")
+        console.log("API call...",count++)
         fetch(`https://jsonserver-her-mock5.herokuapp.com/userdata?q=${args}`)
         .then((res)=> res.json())
-        .then((res)=> console.log(res, count++))
+        .then((res)=> console.log(res))
     }
 
     const debouncr= (fn,delay)=>{
@@ -29,7 +29,7 @@ const Debounceing = () => {
   return (
     <div>
         <h1>Debouncing</h1>
-        <input type="text" onKeyUp={handelDebou} />
+        <input type="text" onChange={handelDebou} placeholder="Search By......"/>
       
     </div>
   )

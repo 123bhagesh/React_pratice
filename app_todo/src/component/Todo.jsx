@@ -40,8 +40,6 @@ export const Todo = () => {
         <Box display="flex" gap="20px" justifyContent={"center"}>
             <TextField size="small" id="outlined-basic" label="Add Name..." variant="outlined" value={todo} onChange={(e)=> setTodo(e.target.value)} />
             <Button variant="contained" onClick={handelAdd}>Add Todo</Button>
-
-            {/* <button onClick={handelAdd}>Add Todo</button> */}
         </Box>
         <Box >
             <TodoList data={data} handleDelete={handleDelete} getTodo={getTodo} />

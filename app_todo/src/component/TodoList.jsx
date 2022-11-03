@@ -7,7 +7,6 @@ import { Edit } from '@mui/icons-material';
 import { TodoEditModal } from './TodoEditModal';
 
 export const TodoList = ({data,handleDelete,getTodo}) => {
-    // console.log("Todo list", data[0].status)
   return (
     <Box width={"480px"} margin="auto">
         <h1>Todo List</h1>

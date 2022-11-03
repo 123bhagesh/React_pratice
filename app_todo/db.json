@@ -1,27 +1,12 @@
 {
   "todo": [
     {
-      "name": "Vikrant",
-      "status": false,
-      "id": 4
-    },
-    {
-      "name": "Lokesh",
-      "status": false,
-      "id": 5
-    },
-    {
       "name": "Mazid",
       "status": false,
       "id": 7
     },
     {
-      "name": "Bhagesh",
-      "status": false,
-      "id": 12
-    },
-    {
-      "name": "Rahul",
+      "name": "Gaurav",
       "status": false,
       "id": 13
     },
@@ -41,7 +26,7 @@
       "id": 20
     },
     {
-      "name": "Shyam",
+      "name": "Manoj",
       "status": false,
       "id": 21
     }

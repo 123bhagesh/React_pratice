@@ -2,21 +2,16 @@ import React, {useMemo, useState} from 'react';
   
 function Memo() {
   const [number, setNumber] = useState(0)
-  const squaredNum =  (
-    console.log("I am running"),
-    Math.pow(number,2)
-  )
+  // const squaredNum = squareNum(number)
 
   // -------Using useMemo-------->
-//   const squaredNum = useMemo(()=> {
-//     console.log("SQUARE")
-//     // return squareNum(number);
-//     return Math.pow(number, 2)
-//   }, [number])
-
+  const squaredNum = useMemo(()=> {
+    // console.log("SQUARE")
+    return squareNum(number);
+  }, [number])
 
   const [counter, setCounter] = useState(0);
-  
+
  // Change the state to the input
   const onChangeHandler = (e) => {
     setNumber(e.target.value);
@@ -28,10 +23,10 @@ function Memo() {
   }
 
   // function to square the value
-// function squareNum(number){
-//     console.log("Squaring will be done!");
-//     return Math.pow(number, 2);
-//   }
+  function squareNum(number){
+    console.log("Squaring will be done!");
+    return Math.pow(number, 2);
+  }
 
   return (
     <div className="App">
@@ -46,7 +41,5 @@ function Memo() {
     </div>
   );
 }
-  
 
-  
 export default Memo

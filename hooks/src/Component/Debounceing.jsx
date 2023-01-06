@@ -9,9 +9,9 @@ const Debounceing = () => {
         .then((res)=> res.json())
         .then((res)=> console.log(res))
     }
-
+    
     const debouncr= (fn,delay)=>{
-        let timer;
+      let timer;
         return function(e){
             // console.log(e.target.value)
         args = e.target.value
@@ -22,9 +22,9 @@ const Debounceing = () => {
         },delay)
         
        }
+       
     }
-    const handelDebou= debouncr(getData,2000)
-
+    const handelDebou= debouncr(getData,1000)
 
   return (
     <div>
